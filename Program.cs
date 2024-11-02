@@ -44,6 +44,7 @@ public partial class Program
     {
         Console.WriteLine($"param1: {param1}, param2: {param2}");
     }
+
 }
 
 

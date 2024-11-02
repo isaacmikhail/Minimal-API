@@ -15,5 +15,6 @@ public class Admin{
     public string Password {get; set;} = default!;
     [StringLength(10)]
     public string Profile {get; set;} = default!;
+
 }
 
