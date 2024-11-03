@@ -26,3 +26,10 @@ D:\Documents\FullStackDIO_Projects\Minimal-API\obj\Debug\net6.0\Minimal-API.dll
 D:\Documents\FullStackDIO_Projects\Minimal-API\obj\Debug\net6.0\ref\Minimal-API.dll
 D:\Documents\FullStackDIO_Projects\Minimal-API\obj\Debug\net6.0\Minimal-API.pdb
 D:\Documents\FullStackDIO_Projects\Minimal-API\obj\Debug\net6.0\Minimal-API.genruntimeconfig.cache
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Humanizer.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\MySqlConnector.dll
+D:\Documents\FullStackDIO_Projects\Minimal-API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

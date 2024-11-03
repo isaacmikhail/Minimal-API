@@ -13,10 +13,12 @@ public class DatabContext : DbContext{
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
+        if(!optionsBuilder.IsConfigured){
         var stringConnection = _configAppSettings.GetConnectionString("mysql").ToString();
         if (!string.IsNullOrEmpty(stringConnection)){
             optionsBuilder.UseMySql("connection string", ServerVersion.AutoDetect("connection string"));
         }
         
+    }
     }
 }

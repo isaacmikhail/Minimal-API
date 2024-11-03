@@ -1,12 +1,22 @@
 ﻿using System;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Minimal_API;
+using Minimal_API.Infrastructure.DataBase;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DatabContext>(options =>{
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("mysql"),
+        ServerVersion.AutoDetect( builder.Configuration.GetConnectionString("mysql"))
+    );
+});
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
@@ -28,7 +38,7 @@ app.MapPost("/login", (Minimal_API.LoginDTO loginDTO) => {
     else 
         return Results.Unauthorized();
 });
-app.Run("http://localhost:5024");
+app.Run("http://localhost:7284");
 
 public delegate void MeuDelegate(int param1, string param2);
 
