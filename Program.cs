@@ -13,8 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DatabContext>(options =>{
     options.UseMySql(
-        builder.Configuration.GetConnectionString("mysql"),
-        ServerVersion.AutoDetect( builder.Configuration.GetConnectionString("mysql"))
+        builder.Configuration.GetConnectionString("MySQLServer"),
+        ServerVersion.AutoDetect( builder.Configuration.GetConnectionString("MySQLServer"))
     );
 });
 
